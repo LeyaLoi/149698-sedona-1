@@ -16,12 +16,40 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="#">Фото и Видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+            <li class="main-nav__item"><a>Форма отзыва</a></li>
             <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <section class="main-slogan">
+      <div class="main-slogan__picture">
+        <img src="http://placehold.it/320x158" width="320" height="158" alt="Каньон Седоны">
+      </div>
+      <h2 class="main-slogan__title">
+        Оставьте свой отзыв
+      </h2>
+      <p class="main-slogan__text">
+        Помогите нашим отелям стать лучше!
+        оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </section>
+    <form class="form-review" action="https://echo.htmlacademy.ru" name="form-review" method="post">
+      <fieldset>
+        <h2 class="form-review__name">Представьтесь пожалуйста</h2>
+        <label class="form-review__input-label" for="user-name">Имя:</label>
+        <input class="form-review__input-text" type="text" id="user-name" name="user-name" placeholder="Петр" required>
+        <label class="form-review__input-label" for="user-surname">Фамилия:</label>
+        <input class="form-review__input-text" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required>
+        <label class="form-review__input-label" for="user-dadname">Отчество:</label>
+        <input class="form-review__input-text" type="text" id="user-dadname" name="user-dadname" placeholder="Александрович" required>
+      </fieldset>
+      <fieldset>
+        <h2 class="form-review__name">Контактная информация</h2>
+        <label for="" class="form-review__input-label"></label>
+        <input type="tel" class="phone" pattern="">
+      </fieldset>
+
     <footer class="page-footer"></footer>
   </body>
 </html>
