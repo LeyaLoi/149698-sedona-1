@@ -17,7 +17,7 @@
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фото и Видео</a></li>
             <li class="main-nav__item"><a>Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
         </div>
       </nav>
@@ -74,11 +74,6 @@
           <label class="label-radio" for="no-answer">Затрудняюсь ответить</label>
         </div>
       </fieldset>
-      <fieldset class="form-review__fieldset form-review__fieldset--hidden">
-        <h2 class="form-review__name">Что-то пошло не так!</h2>
-        <p class="form-review__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="btn" type="button">Ок</button>
-      </fieldset>
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Посещенные достопримечательности:</h2>
         <div class="form-review__item">
@@ -97,13 +92,6 @@
           <input class="input-checkbox" type="checkbox" id="name4" name="name4" checked>
           <label class="label-checkbox" for="name4">Красные скалы</label>
         </div>
-      </fieldset>
-      <fieldset class="form-review__fieldset form-review__fieldset--hidden">
-        <h2 class="form-review__name">Ваш отзыв отправлен!</h2>
-        <p class="form-review__text">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-          В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="btn" type="button">Закрыть окно</button>
       </fieldset>
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Опишите свои эмоции:</h2>
@@ -127,5 +115,17 @@
           Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
         </div>
       </footer>
+      <div class="popup visually-hidden">
+        <h2 class="popup__name">Что-то пошло не так!</h2>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn" type="button">Ок</button>
+      </div>
+      <div class="popup visually-hidden">
+        <h2 class="popup__name">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="btn" type="button">Закрыть окно</button>
+      </div>
   </body>
 </html>
