@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Седона-Форма отзыва</h1>
       <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Седона"></a>
+        <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -24,7 +25,7 @@
     </header>
     <section class="main-slogan">
       <div class="main-slogan__picture">
-        <img src="http://placehold.it/320x158" width="320" height="158" alt="Каньон Седоны">
+        <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
       </div>
       <h2 class="main-slogan__title">
         Оставьте свой отзыв
@@ -38,24 +39,24 @@
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Представьтесь, пожалуйста:</h2>
         <div class="form-review__item">
-          <label class="input-label" for="user-name">Имя:</label>
+          <label class="label-text" for="user-name">Имя:</label>
           <input class="input-text" type="text" id="user-name" name="user-name" placeholder="Петр" required>
         </div>
         <div class="form-review__item">
-          <label class="input-label" for="user-surname">Фамилия:</label>
+          <label class="label-text" for="user-surname">Фамилия:</label>
           <input class="input-text" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required>
         </div>
         <div class="form-review__item">
-          <label class="input-label" for="user-dadname">Отчество:</label>
+          <label class="label-text" for="user-dadname">Отчество:</label>
           <input class="input-text" type="text" id="user-dadname" name="user-dadname" placeholder="Александрович" required>
         </div>
       </fieldset>
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Контактная информация:</h2>
-        <label class="input-label" for="phone">Контактный телефон:</label>
+        <label class="label-text" for="phone">Контактный телефон:</label>
         <input class="input-text input-text--phone" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
         <p class="form-review__error">Ошибка, перепроверьте номер</p>
-        <label class="input-label" for="email">Электронная почта:</label>
+        <label class="label-text" for="email">Электронная почта:</label>
         <input class="input-text input-text--email" type="email" id="email" name="email"  placeholder="Введите e-mail">
         <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
       </fieldset>
@@ -85,7 +86,7 @@
           <label class="label-checkbox" for="name2">Слайд-парк</label>
         </div>
         <div class="form-review__item">
-          <input class="input-checkbox" type="checkbox" id="name3" name="name3" checked>
+          <input class="input-checkbox" type="checkbox" id="name3" name="name3">
           <label class="label-checkbox" for="name3">Гора Колокол</label>
         </div>
         <div class="form-review__item">
