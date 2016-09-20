@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Седона-Форма отзыва</h1>
       <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Седона"></a>
+        <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -24,7 +25,7 @@
     </header>
     <section class="main-slogan">
       <div class="main-slogan__picture">
-        <img src="http://placehold.it/320x158" width="320" height="158" alt="Каньон Седоны">
+        <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
       </div>
       <h2 class="main-slogan__title">
         Оставьте свой отзыв
@@ -37,60 +38,64 @@
     <form class="form-review" action="https://echo.htmlacademy.ru" name="form-review" method="post">
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Представьтесь, пожалуйста:</h2>
-        <div class="form-review__item">
-          <label class="input-label" for="user-name">Имя:</label>
-          <input class="input-text" type="text" id="user-name" name="user-name" placeholder="Петр" required>
+        <div class="form-review__item field-text">
+          <label class="field-text__label" for="user-name">Имя:</label>
+          <input class="field-text__input" type="text" id="user-name" name="user-name" placeholder="Петр" required>
         </div>
-        <div class="form-review__item">
-          <label class="input-label" for="user-surname">Фамилия:</label>
-          <input class="input-text" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required>
+        <div class="form-review__item field-text">
+          <label class="field-text__label" for="user-surname">Фамилия:</label>
+          <input class="field-text__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required>
         </div>
-        <div class="form-review__item">
-          <label class="input-label" for="user-dadname">Отчество:</label>
-          <input class="input-text" type="text" id="user-dadname" name="user-dadname" placeholder="Александрович" required>
+        <div class="form-review__item field-text">
+          <label class="field-text__label" for="user-dadname">Отчество:</label>
+          <input class="field-text__input" type="text" id="user-dadname" name="user-dadname" placeholder="Александрович" required>
         </div>
       </fieldset>
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Контактная информация:</h2>
-        <label class="input-label" for="phone">Контактный телефон:</label>
-        <input class="input-text input-text--phone" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
+        <div class="form-review__item field-tel">
+          <label class="field-tel__label" for="phone">Контактный телефон:</label>
+          <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
+        </div>
         <p class="form-review__error">Ошибка, перепроверьте номер</p>
-        <label class="input-label" for="email">Электронная почта:</label>
-        <input class="input-text input-text--email" type="email" id="email" name="email"  placeholder="Введите e-mail">
+        <div class="form-review__item field-email">
+          <label class="field-email__label" for="email">Электронная почта:</label>
+          <input class="field-email__input" type="email" id="email" name="email"  placeholder="Введите e-mail">
+        </div>
         <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
       </fieldset>
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Ваше общее впечатление:</h2>
-        <div class="form-review__item">
-          <input class="input-radio" type="radio" id="positive" name="impression" value="positive" checked>
-          <label class="label-radio" for="positive">Скорее положительное</label>
+        <div class="form-review__item field-radio">
+          <input class="field-radio__input" type="radio" id="positive" name="impression" value="positive" checked>
+          <label class="field-radio__label" for="positive">Скорее положительное</label>
         </div>
-        <div class="form-review__item">
-          <input class="input-radio" type="radio" id="negative" name="impression" value="negative">
-          <label class="label-radio" for="negative">Скорее отрицательное</label>
+        <div class="form-review__item field-radio">
+          <input class="field-radio__input" type="radio" id="negative" name="impression" value="negative">
+          <label class="field-radio__label" for="negative">Скорее отрицательное</label>
         </div>
-        <div class="form-review__item">
-          <input class="input-radio" type="radio" id="no-answer" name="impression" value="no-answer">
-          <label class="label-radio" for="no-answer">Затрудняюсь ответить</label>
+        <div class="form-review__item field-radio">
+          <input class="field-radio__input" type="radio" id="no-answer" name="impression" value="no-answer">
+          <label class="field-radio__label" for="no-answer">Затрудняюсь ответить</label>
         </div>
       </fieldset>
       <fieldset class="form-review__fieldset">
         <h2 class="form-review__name">Посещенные достопримечательности:</h2>
-        <div class="form-review__item">
-          <input class="input-checkbox" type="checkbox" id="name1" name="name1" checked>
-          <label class="label-checkbox" for="name1">Мост Дьявола</label>
+        <div class="form-review__item field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" id="name1" name="name1" checked>
+          <label class="field-checkbox__label" for="name1">Мост Дьявола</label>
         </div>
-        <div class="form-review__item">
-          <input class="input-checkbox" type="checkbox" id="name2" name="name2" checked>
-          <label class="label-checkbox" for="name2">Слайд-парк</label>
+        <div class="form-review__item field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" id="name2" name="name2" checked>
+          <label class="field-checkbox__label" for="name2">Слайд-парк</label>
         </div>
-        <div class="form-review__item">
-          <input class="input-checkbox" type="checkbox" id="name3" name="name3" checked>
-          <label class="label-checkbox" for="name3">Гора Колокол</label>
+        <div class="form-review__item field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" id="name3" name="name3">
+          <label class="field-checkbox__label" for="name3">Гора Колокол</label>
         </div>
-        <div class="form-review__item">
-          <input class="input-checkbox" type="checkbox" id="name4" name="name4" checked>
-          <label class="label-checkbox" for="name4">Красные скалы</label>
+        <div class="form-review__item field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" id="name4" name="name4" checked>
+          <label class="field-checkbox__label" for="name4">Красные скалы</label>
         </div>
       </fieldset>
       <fieldset class="form-review__fieldset">
@@ -105,10 +110,10 @@
     <footer class="page-footer">
         <div class="page-footer__contact"><span>#Visitsedona</span></div>
         <div class="page-footer__social">
-          <div class="social-links">
-              <a class="social-link social-link--tw" href="#">Твиттер</a>
-              <a class="social-link social-link--fb" href="#">Фэйсбук</a>
-              <a class="social-link social-link--yt" href="#">Ютуб</a>
+          <div class="social">
+              <a class="social__link social__link--tw" href="#">Твиттер</a>
+              <a class="social__link social__link--fb" href="#">Фэйсбук</a>
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
           </div>
         </div>
         <div class="page-footer__copyright">
