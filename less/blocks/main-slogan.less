@@ -1,6 +1,31 @@
-.main-slogan__picture {
+.main-slogan__picture img {
+  width: auto;
   background-color: #81b3d2;
   // background-image: url(../img/text-sedona-index.svg),
   //                   url(../img/bg-back-mobile@1x.jpg);
   // background-repeat: no-repeat;
+}
+.main-slogan__content {
+  .container();
+  .align();
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+@media @tablet-widths {
+  .main-slogan__content {
+    width: 510px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .main-slogan__content {
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+  .main-slogan__picture {
+    .container();
+  }
 }

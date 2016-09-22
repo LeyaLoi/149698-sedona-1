@@ -1,0 +1,21 @@
+.page-header {
+  min-height: 280px;
+  position: relative;
+}
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -51px;
+  min-height: 56px;
+}
+@media @tablet-widths {
+  .page-header {
+    min-height: 56px;
+  }
+}
+@media @desktop-widths {
+  .page-header {
+    .container();
+  }
+}
