@@ -6,7 +6,26 @@
   display: flex;
   flex-direction: column;
 }
+
 .form-review__name {
   .align();
   // width: 100%;
+}
+@media @tablet-widths {
+  .form-review__fieldset:nth-child(1) {
+    width: 45%;
+  }
+  // .form-review {
+  //   flex-wrap: wrap;
+  // }
+  .form-review__fieldset:nth-child(3) {
+    width: 45%;
+    order: -1;
+  }
+
+}
+@media @desktop-widths {
+  .form-review__fieldset  .form-review__item {
+    flex-direction: row;
+  }
 }
