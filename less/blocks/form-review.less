@@ -12,20 +12,34 @@
   // width: 100%;
 }
 @media @tablet-widths {
+  .form-review {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form-review__fieldset {
+    width: 100%;
+    // border: none;
+  }
   .form-review__fieldset:nth-child(1) {
-    width: 45%;
+    width: 49%;
+    box-sizing: border-box;
   }
   // .form-review {
   //   flex-wrap: wrap;
   // }
   .form-review__fieldset:nth-child(3) {
-    width: 45%;
+    width: 49%;
+    box-sizing: border-box;
     order: -1;
   }
 
 }
 @media @desktop-widths {
-  .form-review__fieldset  .form-review__item {
+  .form-review__fieldset:nth-child(4) {
     flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .form-review__fieldset:nth-child(4) .form-review__item {
+    width: auto;
   }
 }
