@@ -59,13 +59,13 @@
           <div class="form-review__item field-tel">
             <label class="field-tel__label" for="phone">Контактный телефон:</label>
             <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
+            <p class="form-review__error">Ошибка, перепроверьте номер</p>
           </div>
-          <p class="form-review__error">Ошибка, перепроверьте номер</p>
           <div class="form-review__item field-email">
             <label class="field-email__label" for="email">Электронная почта:</label>
             <input class="field-email__input" type="email" id="email" name="email"  placeholder="Введите e-mail">
+            <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
           </div>
-          <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
         </fieldset>
         <fieldset class="form-review__fieldset">
           <h2 class="form-review__name">Ваше общее впечатление:</h2>
@@ -84,21 +84,23 @@
         </fieldset>
         <fieldset class="form-review__fieldset">
           <h2 class="form-review__name">Посещенные достопримечательности:</h2>
-          <div class="form-review__item field-checkbox">
-            <input class="field-checkbox__input" type="checkbox" id="name1" name="name1" checked>
-            <label class="field-checkbox__label" for="name1">Мост Дьявола</label>
-          </div>
-          <div class="form-review__item field-checkbox">
-            <input class="field-checkbox__input" type="checkbox" id="name2" name="name2" checked>
-            <label class="field-checkbox__label" for="name2">Слайд-парк</label>
-          </div>
-          <div class="form-review__item field-checkbox">
-            <input class="field-checkbox__input" type="checkbox" id="name3" name="name3">
-            <label class="field-checkbox__label" for="name3">Гора Колокол</label>
-          </div>
-          <div class="form-review__item field-checkbox">
-            <input class="field-checkbox__input" type="checkbox" id="name4" name="name4" checked>
-            <label class="field-checkbox__label" for="name4">Красные скалы</label>
+          <div class="form-review__wrap">
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name1" name="name1" checked>
+              <label class="field-checkbox__label" for="name1">Мост Дьявола</label>
+            </div>
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name2" name="name2" checked>
+              <label class="field-checkbox__label" for="name2">Слайд-парк</label>
+            </div>
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name3" name="name3">
+              <label class="field-checkbox__label" for="name3">Гора Колокол</label>
+            </div>
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name4" name="name4" checked>
+              <label class="field-checkbox__label" for="name4">Красные скалы</label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form-review__fieldset">
