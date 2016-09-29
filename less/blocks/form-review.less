@@ -1,6 +1,11 @@
 .form-review {
   display: flex;
   flex-direction: column;
+
+  @media @tablet-widths {
+      flex-direction: row;
+      flex-wrap: wrap;
+      }
 }
 .form-review__fieldset {
   flex: 1 100%;
@@ -9,10 +14,6 @@
   .align();
 }
 @media @tablet-widths {
-  .form-review {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   .form-review__fieldset:nth-child(1) {
     flex: 1 auto;
   }
@@ -20,23 +21,27 @@
     flex: 1 auto;
     order: -1;
   }
-  // .form-review__fieldset {
-  //   // flex: 0 auto;
-  //   display: flex;
-  //   flex-direction: row;
-  // }
   .form-review__wrap {
-    // width: 465px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: stretch;
+    width: 60%;
+    margin: 0 auto;
+
+    @media @desktop-widths {
+        width: 100%;
+        justify-content: space-between;
+      }
   }
   .form-review__wrap .form-review__item {
-    // width: 230px;
-    // flex: 1 ;
-    // margin: auto;
+    width: 50%;
+
+    @media @desktop-widths {
+        width: auto;
+      }
+
   }
   .form-review__wrap .form-review__item:nth-child(1) {
     order: 1;
@@ -52,14 +57,4 @@
   }
 }
 @media @desktop-widths {
-  .form-review {
-    // background-color: #ff5c5c;
-  }
-  .form-review__wrap {
-    justify-content: space-between;
-  }
-  .form-review__wrap .form-review__item {
-    // width: 100%;
-    // flex: 0 auto;
-  }
 }
