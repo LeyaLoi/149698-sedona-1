@@ -90,8 +90,8 @@
   @media @tablet-widths {
     flex-direction: row;
     background-color: @white-color;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    // justify-content: space-between;
       // min-height: 56px;
     }
 }
@@ -103,13 +103,14 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   @media @tablet-widths {
-    flex: auto;
+    flex: 0 auto;
     border: none;
+    // margin: auto;
     }
 
-    &:nth-child(2) {
+    &:nth-child(3) {
       @media @tablet-widths {
-        // margin-right: auto;
+        margin-left: auto;
         }
     }
 }
@@ -126,8 +127,14 @@
   text-decoration: none;
 
   @media @tablet-widths {
+    min-width: 150px;
+    padding: 8px 2%;
+
     color: #000000;
     }
+
+  @media @desktop-widths {
+    min-width: 250px;
+    }
+
 }
-// @media @desktop-widths {
-// }
