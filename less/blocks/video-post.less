@@ -1,0 +1,45 @@
+.video-post {
+  .container();
+}
+.video-post__header {
+  .container();
+  .align();
+  padding: 40px 0;
+  position: relative;
+}
+.video-post img {
+  display: block;
+  margin: 0 auto;
+}
+.video-post__play {
+  .container();
+}
+.video-post__controls {
+  width: 280px;
+  height: 46px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.6);
+
+  &--position {
+    // position: absolute;
+    // margin-top: -46px;
+    height: 25px;
+    z-index: 1;
+    padding-top: 21px;
+  }
+  &--bg {
+    background-color: #f2f2f2;
+  }
+}
+@media @tablet-widths {
+  .video-post__header {
+    width: 430px;
+    padding: 65px 0px 75px;
+  }
+}
+@media @desktop-widths {
+    .video-post__header {
+    width: 460px;
+    padding: 70px 0px 80px;
+  }
+}

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Седона-Форма отзыва</h1>
       <div class="page-header__logo">
         <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
       </div>
@@ -23,90 +23,98 @@
         </div>
       </nav>
     </header>
-    <section class="main-slogan">
-      <div class="main-slogan__picture">
-        <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
+    <main class="page-mainf">
+      <section class="main-slogan">
+        <div class="main-slogan__picture">
+          <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
+        </div>
+        <div class="main-slogan__content">
+        <h2 class="main-slogan__title">
+          Оставьте свой отзыв
+        </h2>
+        <p class="main-slogan__text">
+          Помогите нашим отелям стать лучше!
+          Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
       </div>
-      <h2 class="main-slogan__title">
-        Оставьте свой отзыв
-      </h2>
-      <p class="main-slogan__text">
-        Помогите нашим отелям стать лучше!
-        Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
-    </section>
-    <form class="form-review" action="https://echo.htmlacademy.ru" name="form-review" method="post">
-      <fieldset class="form-review__fieldset">
-        <h2 class="form-review__name">Представьтесь, пожалуйста:</h2>
-        <div class="form-review__item field-text">
-          <label class="field-text__label" for="user-name">Имя:</label>
-          <input class="field-text__input" type="text" id="user-name" name="user-name" placeholder="Петр" required>
-        </div>
-        <div class="form-review__item field-text">
-          <label class="field-text__label" for="user-surname">Фамилия:</label>
-          <input class="field-text__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required>
-        </div>
-        <div class="form-review__item field-text">
-          <label class="field-text__label" for="user-dadname">Отчество:</label>
-          <input class="field-text__input" type="text" id="user-dadname" name="user-dadname" placeholder="Александрович" required>
-        </div>
-      </fieldset>
-      <fieldset class="form-review__fieldset">
-        <h2 class="form-review__name">Контактная информация:</h2>
-        <div class="form-review__item field-tel">
-          <label class="field-tel__label" for="phone">Контактный телефон:</label>
-          <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
-        </div>
-        <p class="form-review__error">Ошибка, перепроверьте номер</p>
-        <div class="form-review__item field-email">
-          <label class="field-email__label" for="email">Электронная почта:</label>
-          <input class="field-email__input" type="email" id="email" name="email"  placeholder="Введите e-mail">
-        </div>
-        <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
-      </fieldset>
-      <fieldset class="form-review__fieldset">
-        <h2 class="form-review__name">Ваше общее впечатление:</h2>
-        <div class="form-review__item field-radio">
-          <input class="field-radio__input" type="radio" id="positive" name="impression" value="positive" checked>
-          <label class="field-radio__label" for="positive">Скорее положительное</label>
-        </div>
-        <div class="form-review__item field-radio">
-          <input class="field-radio__input" type="radio" id="negative" name="impression" value="negative">
-          <label class="field-radio__label" for="negative">Скорее отрицательное</label>
-        </div>
-        <div class="form-review__item field-radio">
-          <input class="field-radio__input" type="radio" id="no-answer" name="impression" value="no-answer">
-          <label class="field-radio__label" for="no-answer">Затрудняюсь ответить</label>
-        </div>
-      </fieldset>
-      <fieldset class="form-review__fieldset">
-        <h2 class="form-review__name">Посещенные достопримечательности:</h2>
-        <div class="form-review__item field-checkbox">
-          <input class="field-checkbox__input" type="checkbox" id="name1" name="name1" checked>
-          <label class="field-checkbox__label" for="name1">Мост Дьявола</label>
-        </div>
-        <div class="form-review__item field-checkbox">
-          <input class="field-checkbox__input" type="checkbox" id="name2" name="name2" checked>
-          <label class="field-checkbox__label" for="name2">Слайд-парк</label>
-        </div>
-        <div class="form-review__item field-checkbox">
-          <input class="field-checkbox__input" type="checkbox" id="name3" name="name3">
-          <label class="field-checkbox__label" for="name3">Гора Колокол</label>
-        </div>
-        <div class="form-review__item field-checkbox">
-          <input class="field-checkbox__input" type="checkbox" id="name4" name="name4" checked>
-          <label class="field-checkbox__label" for="name4">Красные скалы</label>
-        </div>
-      </fieldset>
-      <fieldset class="form-review__fieldset">
-        <h2 class="form-review__name">Опишите свои эмоции:</h2>
-        <div class="form-review__item">
-          <textarea class="textarea" name="review" id="review" cols="30" rows="4">Опишите подробно все свои восторги
-          </textarea>
-        </div>
-      </fieldset>
-      <button class="btn" type="submit">Отправить отзыв</button>
-    </form>
+      </section>
+      <form class="form-review" action="https://echo.htmlacademy.ru" name="form-review" method="post">
+        <fieldset class="form-review__fieldset">
+          <h2 class="form-review__name">Представьтесь, пожалуйста:</h2>
+          <div class="form-review__item field-text">
+            <label class="field-text__label" for="user-name">Имя:</label>
+            <input class="field-text__input" type="text" id="user-name" name="user-name" placeholder="Петр" required>
+          </div>
+          <div class="form-review__item field-text">
+            <label class="field-text__label" for="user-surname">Фамилия:</label>
+            <input class="field-text__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required>
+          </div>
+          <div class="form-review__item field-text">
+            <label class="field-text__label" for="user-dadname">Отчество:</label>
+            <input class="field-text__input" type="text" id="user-dadname" name="user-dadname" placeholder="Александрович" required>
+          </div>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <h2 class="form-review__name">Контактная информация:</h2>
+          <div class="form-review__contact">
+            <div class="form-review__item field-tel">
+              <label class="field-tel__label" for="phone">Контактный телефон:</label>
+              <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
+              <p class="form-review__error">Ошибка, перепроверьте номер</p>
+            </div>
+            <div class="form-review__item field-email">
+              <label class="field-email__label" for="email">Электронная почта:</label>
+              <input class="field-email__input" type="email" id="email" name="email"  placeholder="Введите e-mail">
+              <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <h2 class="form-review__name">Ваше общее впечатление:</h2>
+          <div class="form-review__item field-radio">
+            <input class="field-radio__input" type="radio" id="positive" name="impression" value="positive" checked>
+            <label class="field-radio__label" for="positive">Скорее положительное</label>
+          </div>
+          <div class="form-review__item field-radio">
+            <input class="field-radio__input" type="radio" id="negative" name="impression" value="negative">
+            <label class="field-radio__label" for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="form-review__item field-radio">
+            <input class="field-radio__input" type="radio" id="no-answer" name="impression" value="no-answer">
+            <label class="field-radio__label" for="no-answer">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <h2 class="form-review__name">Посещенные достопримечательности:</h2>
+          <div class="form-review__wrap">
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name1" name="name1" checked>
+              <label class="field-checkbox__label" for="name1">Мост Дьявола</label>
+            </div>
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name2" name="name2" checked>
+              <label class="field-checkbox__label" for="name2">Слайд-парк</label>
+            </div>
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name3" name="name3">
+              <label class="field-checkbox__label" for="name3">Гора Колокол</label>
+            </div>
+            <div class="form-review__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" id="name4" name="name4" checked>
+              <label class="field-checkbox__label" for="name4">Красные скалы</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <h2 class="form-review__name">Опишите свои эмоции:</h2>
+          <div class="form-review__item">
+            <textarea class="textarea" name="review" id="review" cols="30" rows="4">Опишите подробно все свои восторги
+            </textarea>
+          </div>
+        </fieldset>
+        <button class="btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
     <footer class="page-footer">
         <div class="page-footer__contact"><span>#Visitsedona</span></div>
         <div class="page-footer__social">

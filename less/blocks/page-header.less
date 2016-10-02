@@ -1,0 +1,31 @@
+.page-header {
+  // min-height: 280px;
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-widths {
+    display: block;
+    min-height: 56px;
+    position: relative;
+
+  }
+  @media @desktop-widths {
+      // .container-fluid();
+  }
+}
+
+.page-header__logo {
+  order: 1;
+  align-self: center;
+  min-height: 56px;
+
+  @media @tablet-widths {
+    // display: block;
+    // .container-fluid();
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+  }
+}

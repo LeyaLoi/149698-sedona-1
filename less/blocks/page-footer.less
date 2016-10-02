@@ -1,0 +1,41 @@
+.page-footer {
+  .container();
+  .align();
+  margin-top: 75px;
+}
+.page-footer__contact {
+  margin-bottom: 40px;
+}
+.page-footer__social {
+  margin-bottom: 40px;
+}
+@media @tablet-widths {
+  .page-footer {
+    .clearfix();
+  }
+  .page-footer__contact {
+    width: 33.3%;
+    float: left;
+    text-align: left;
+  }
+  .page-footer__social {
+    width: 33.3%;
+    float: left;
+  }
+  .page-footer__copyright {
+    width: 33.3%;
+    float: left;
+    text-align: right;
+  }
+}
+@media @desktop-widths {
+  .page-footer {
+    margin-top: 120px;
+  }
+  .page-footer__contact {
+    text-align: center;
+  }
+  .page-footer__copyright {
+    float: right;
+  }
+}

@@ -1,0 +1,30 @@
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width:648px;
+  }
+  @media @desktop-widths {
+    width:1200px;
+  }
+}
+.container-fluid() {
+  margin: auto;
+
+  @media @tablet-widths {
+    width:84%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+.align() {
+  text-align: center;
+}
