@@ -1,19 +1,16 @@
 .main-slogan__picture img {
-  // width: auto;
+  width: 320px;
+  height: 389px;
   background-color: #81b3d2;
-  // background-image: url(../img/text-sedona-index.svg),
-  //                   url(../img/bg-back-mobile@1x.jpg);
-  // background-repeat: no-repeat;
 }
 .main-slogan__content {
-  .container();
+  .container-fluid();
   .align();
-  padding-top: 40px;
+  padding: 40px 30px;
   padding-bottom: 30px;
-}
+  line-height: 26px;
 
-@media @tablet-widths {
-  .main-slogan__content {
+  @media @tablet-widths {
     width: 510px;
     padding-top: 45px;
     padding-bottom: 50px;
@@ -21,12 +18,9 @@
     &--photo {
       width: 450px;
       padding: 70px 0;
+      }
     }
-  }
-}
-
-@media @desktop-widths {
-  .main-slogan__content {
+  @media @desktop-widths {
     padding-top: 40px;
     padding-bottom: 55px;
 
@@ -34,7 +28,14 @@
       padding: 100px 0 70px;
     }
   }
-  .main-slogan__picture {
+}
+
+.main-slogan__title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.main-slogan__picture {
+    @media @desktop-widths {
     .container();
   }
 }
