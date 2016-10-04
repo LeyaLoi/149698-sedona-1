@@ -1,5 +1,5 @@
 .form-review {
-  .container-fluid();
+  // .container-fluid();
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -56,6 +56,9 @@
 .form-review__name span {
   @media @tablet-widths {
     display: none;
+  }
+  @media @desktop-widths {
+    display: inline;
   }
 }
 .form-review__wrap {
