@@ -11,13 +11,13 @@
       <div class="page-header__logo">
         <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav  main-nav--opened  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrap">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фото и Видео</a></li>
-            <li class="main-nav__item"><a>Форма отзыва</a></li>
+            <li class="main-nav__item"><a >Форма отзыва</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
         </div>
@@ -40,7 +40,7 @@
       </section>
       <form class="form-review" action="https://echo.htmlacademy.ru" name="form-review" method="post">
         <fieldset class="form-review__fieldset">
-          <h2 class="form-review__name">Представьтесь, пожалуйста:</h2>
+          <h2 class="form-review__name  form-review__name--center">Представьтесь<span>, пожалуйста</span>:</h2>
           <div class="form-review__item field-text">
             <label class="field-text__label" for="user-name">Имя:</label>
             <input class="field-text__input" type="text" id="user-name" name="user-name" placeholder="Петр" required>
@@ -70,7 +70,7 @@
           </div>
         </fieldset>
         <fieldset class="form-review__fieldset">
-          <h2 class="form-review__name">Ваше общее впечатление:</h2>
+          <h2 class="form-review__name  form-review__name--center">Ваше общее впечатление:</h2>
           <div class="form-review__item field-radio">
             <input class="field-radio__input" type="radio" id="positive" name="impression" value="positive" checked>
             <label class="field-radio__label" for="positive">Скорее положительное</label>
@@ -116,29 +116,30 @@
       </form>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__contact"><span>#Visitsedona</span></div>
-        <div class="page-footer__social">
-          <div class="social">
-              <a class="social__link social__link--tw" href="#">Твиттер</a>
-              <a class="social__link social__link--fb" href="#">Фэйсбук</a>
-              <a class="social__link social__link--yt" href="#">Ютуб</a>
-          </div>
+      <div class="page-footer__contact"><span>#Visitsedona</span></div>
+      <div class="page-footer__social">
+        <div class="social">
+            <a class="social__link social__link--tw" href="#">Твиттер</a>
+            <a class="social__link social__link--fb" href="#">Фэйсбук</a>
+            <a class="social__link social__link--yt" href="#">Ютуб</a>
         </div>
-        <div class="page-footer__copyright">
-          Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
-        </div>
-      </footer>
-      <div class="popup visually-hidden">
-        <h2 class="popup__name">Что-то пошло не так!</h2>
-        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="btn" type="button">Ок</button>
       </div>
-      <div class="popup visually-hidden">
-        <h2 class="popup__name">Ваш отзыв отправлен!</h2>
-        <p class="popup__text">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-          В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="btn" type="button">Закрыть окно</button>
+      <div class="page-footer__copyright">
+        Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
       </div>
+    </footer>
+    <div class="popup visually-hidden">
+      <h2 class="popup__name">Что-то пошло не так!</h2>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="btn" type="button">Ок</button>
+    </div>
+    <div class="popup visually-hidden">
+      <h2 class="popup__name">Ваш отзыв отправлен!</h2>
+      <p class="popup__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="btn" type="button">Закрыть окно</button>
+    </div>
+    <script src="js/navmenu.js"></script>
   </body>
 </html>
