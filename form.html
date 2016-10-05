@@ -59,13 +59,17 @@
           <div class="form-review__contact">
             <div class="form-review__item field-tel">
               <label class="field-tel__label" for="phone">Контактный телефон:</label>
-              <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
+              <div class="field-tel__wrap">
+                <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
+              </div>
               <p class="form-review__error">Ошибка, перепроверьте номер</p>
             </div>
-            <div class="form-review__item field-email">
-              <label class="field-email__label" for="email">Электронная почта:</label>
-              <input class="field-email__input" type="email" id="email" name="email"  placeholder="Введите e-mail">
-              <p class="form-review__error visually-hidden">Ошибка, перепроверьте адрес</p>
+            <div class="form-review__item field-tel">
+              <label class="field-tel__label" for="email">Электронная почта:</label>
+              <div class="field-tel__wrap  field-tel__wrap--email">
+                <input class="field-tel__input" type="email" id="email" name="email"  placeholder="Введите e-mail">
+              </div>
+              <p class="form-review__error form-review__error--hidden">Ошибка, перепроверьте адрес</p>
             </div>
           </div>
         </fieldset>
@@ -107,8 +111,8 @@
         </fieldset>
         <fieldset class="form-review__fieldset">
           <h2 class="form-review__name">Опишите свои эмоции:</h2>
-          <div class="form-review__item">
-            <textarea class="textarea" name="review" id="review" cols="30" rows="4">Опишите подробно все свои восторги
+          <div class="form-review__item field-textarea">
+            <textarea class="field-textarea__text" name="review" id="review" cols="0" rows="4">Опишите подробно все свои восторги
             </textarea>
           </div>
         </fieldset>
@@ -128,12 +132,12 @@
         Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
       </div>
     </footer>
-    <div class="popup visually-hidden">
+    <div class="popup popup-hidden">
       <h2 class="popup__name">Что-то пошло не так!</h2>
       <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="btn" type="button">Ок</button>
     </div>
-    <div class="popup visually-hidden">
+    <div class="popup popup-hidden">
       <h2 class="popup__name">Ваш отзыв отправлен!</h2>
       <p class="popup__text">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам.

@@ -1,0 +1,52 @@
+.field-tel {
+  display: flex;
+  flex-direction: column;
+
+}
+.field-tel__label {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.field-tel__wrap {
+  display: flex;
+  position: relative;
+  flex: 1 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+.field-tel__input {
+  flex: 1 100%;
+  padding: 16px;
+  padding-left: 20px;
+  padding-right: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  &::-webkit-input-placeholder {
+    color: #000000;
+  }
+}

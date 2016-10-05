@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
 
   @media @tablet-widths {
     flex-direction: row;
@@ -14,7 +13,7 @@
 .form-review__fieldset {
   flex: 1 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: none;
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box;
@@ -40,7 +39,10 @@
   padding-top: 25px;
   padding-bottom: 25px;
   font-size: 18px;
+  font-weight: bold;
   line-height: 26px;
+  color: #000000;
+
 
   @media @tablet-widths {
   font-size: 21px;
@@ -61,7 +63,26 @@
     display: inline;
   }
 }
+.form-review__contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+.form-review__error {
+  padding-left: 20px;
+
+  color: #ff5c5c;
+  text-transform: none;
+
+  &--hidden {
+    display: none;
+  }
+}
+
 .form-review__wrap {
+  display: flex;
+  flex-direction: column;
+
   @media @tablet-widths {
     display: flex;
     flex-direction: row;
