@@ -104,13 +104,20 @@
 
   @media @tablet-widths {
     flex: 0 auto;
+    width: 25%;
     border: none;
     // margin: auto;
     }
 
     &:nth-child(3) {
       @media @tablet-widths {
-        margin-left: auto;
+        padding-left: 60px;
+        }
+    }
+
+    &:nth-child(2) {
+      @media @tablet-widths {
+        padding-right: 60px;
         }
     }
 }
@@ -127,9 +134,11 @@
   text-decoration: none;
 
   @media @tablet-widths {
-    min-width: 150px;
-    padding: 8px 2%;
+    // width: 25%;
+    padding: 20px 2%;
 
+    font-size: 14px;
+    line-height: 26px;
     color: #000000;
     }
 

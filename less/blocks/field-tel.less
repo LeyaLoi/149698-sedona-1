@@ -2,15 +2,53 @@
   display: flex;
   flex-direction: column;
 
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  @media @desktop-widths {
+    width: 50%;
+    align-items: center;
+    margin-top: 0px;
+  }
+  &--desktop {
+    @media @desktop-widths {
+      // width: 30%;
+      margin-right: 80px;
+    }
+  }
 }
 .field-tel__label {
   padding-left: 20px;
   margin-bottom: 10px;
+
+  @media @desktop-widths {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+}
+.field-tel__label span {
+  @media @desktop-widths {
+    display: none;
+  }
 }
 .field-tel__wrap {
   display: flex;
   position: relative;
   flex: 1 100%;
+
+  @media @tablet-widths {
+    order: 2;
+  }
+  @media @desktop-widths {
+    flex: 1 auto;
+    width: 50%;
+    order: 0;
+  }
 
   &::after {
     position: absolute;

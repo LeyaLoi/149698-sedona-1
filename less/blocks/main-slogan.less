@@ -12,22 +12,34 @@
   line-height: 26px;
 
   @media @tablet-widths {
-    width: 510px;
+    width: 440px;
     margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 50px;
-
-    &--photo {
-      width: 450px;
-      padding: 70px 0;
-      }
-    }
+  }
   @media @desktop-widths {
     padding-top: 40px;
     padding-bottom: 55px;
+  }
 
-    &--photo {
-      padding: 100px 0 70px;
+  &--photo {
+    @media @tablet-widths {
+    width: 450px;
+    padding: 70px 0;
+    }
+
+    @media @desktop-widths {
+    padding: 100px 0 70px;
+    }
+  }
+
+  &--big {
+    @media @tablet-widths {
+      padding-top: 70px;
+      padding-bottom: 80px;
+    }
+    @media @desktop-widths {
+    padding: 100px 0 70px;
     }
   }
 }
@@ -35,6 +47,13 @@
 .main-slogan__title {
   font-weight: bold;
   font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 35px;
+
+  @media @tablet-widths {
+    font-size: 30px;
+  }
 }
 .main-slogan__picture {
     @media @desktop-widths {
@@ -44,4 +63,5 @@
 .main-slogan__text {
   padding: 0;
   margin: 0;
+  line-height: 24px;
 }

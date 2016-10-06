@@ -28,7 +28,7 @@
         <div class="main-slogan__picture">
           <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
         </div>
-        <div class="main-slogan__content">
+        <div class="main-slogan__content  main-slogan__content--big">
         <h2 class="main-slogan__title">
           Оставьте свой отзыв
         </h2>
@@ -55,10 +55,10 @@
           </div>
         </fieldset>
         <fieldset class="form-review__fieldset">
-          <h2 class="form-review__name">Контактная информация:</h2>
+          <h2 class="form-review__name  form-review__name--contact">Контактная информация:</h2>
           <div class="form-review__contact">
-            <div class="form-review__item field-tel">
-              <label class="field-tel__label" for="phone">Контактный телефон:</label>
+            <div class="form-review__item field-tel  field-tel--desktop">
+              <label class="field-tel__label" for="phone"><span>Контактный </span>телефон:</label>
               <div class="field-tel__wrap">
                 <input class="field-tel__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="Введите телефон">
               </div>
@@ -117,6 +117,9 @@
           </div>
         </fieldset>
         <button class="btn" type="submit">Отправить отзыв</button>
+        <div class="form-review__fieldset  form-review__fieldset--hidden">
+          *&mdash;Обязательные поля
+        </div>
       </form>
     </main>
     <footer class="page-footer">
