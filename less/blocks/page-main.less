@@ -1,6 +1,13 @@
+// .page-main {
+//   .container();
+// }
 .page-main {
-  .container();
-}
-.page-mainf {
   .container-fluid();
-}
+
+  &--full {
+    @media @desktop-widths {
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+    }
+  }
