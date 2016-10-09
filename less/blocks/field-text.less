@@ -13,7 +13,7 @@
   padding: 16px;
   padding-right: 0;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -29,6 +29,16 @@
   &::-webkit-input-placeholder {
     color: #000000;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    outline: none;
+  }
+
 
 }
 .field-text__label {

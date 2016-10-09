@@ -2,12 +2,17 @@
 //   .container();
 // }
 .page-main {
-  .container-fluid();
+
+  &--fluid {
+    .container-fluid();
+  }
 
   &--full {
+    .container-fluid();
+
     @media @desktop-widths {
       max-width: 1200px;
       margin: 0 auto;
       }
     }
-  }
+}

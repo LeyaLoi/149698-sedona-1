@@ -48,6 +48,22 @@ input[type="radio"] + label::after {
   background-color: #f2f2f2;
   border-radius: 50%;
 }
+
+input[type="radio"] + label::before
+// input[type="radio"]:hover + label::after
+ {
+  background-color: #e5e5e5;
+}
+// input[type="radio"]:active + label::before
+// // input[type="radio"]:active + label::after
+// {
+//   background-color: #d5d5d5;
+// }
+input[type="radio"]:active + label::after {
+  background-color: #a4a4a4;
+}
+
+
 input[type="radio"]:checked + label::after {
   width: 23px;
   height: 23px;

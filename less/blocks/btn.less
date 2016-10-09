@@ -1,4 +1,5 @@
 .btn {
+  display: block;
   padding: 20px 0;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 21px;
@@ -6,7 +7,34 @@
   font-weight: bold;
   color: @white-color;
   text-transform: uppercase;
+  text-decoration: none;
 
   border: none;
   background-color: #81b3d2;
+  cursor: pointer;
+
+  &--search {
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      color: #7aadcb;
+      background-color: #5496bd;
+    }
+    &:disabled {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &--popup {
+    width: 85%;
+    font-size: 18px;
+    margin: 0 auto;
+
+
+    @media @tablet-widths {
+      width: 100%;
+      font-size: 21px;
+    }
+  }
 }

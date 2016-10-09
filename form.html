@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <div class="wrapper">
+    <div class="wrapper">
       <header class="page-header">
         <div class="page-header__logo">
           <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
@@ -24,7 +24,7 @@
           </div>
         </nav>
       </header>
-      <main class="page-main">
+      <main class="page-main  page-main--fluid">
         <section class="main-slogan">
           <div class="main-slogan__picture">
             <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
@@ -117,7 +117,7 @@
               </textarea>
             </div>
           </fieldset>
-          <button class="btn" type="submit">Отправить отзыв</button>
+          <button class="btn btn--submit" type="submit">Отправить отзыв</button>
           <div class="form-review__fieldset  form-review__fieldset--hidden">
             *&mdash;Обязательные поля
           </div>
@@ -136,19 +136,20 @@
           Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
         </div>
       </footer>
-      <div class="popup popup-hidden">
+      <div class="popup  popup--error  popup--hidden">
         <h2 class="popup__name">Что-то пошло не так!</h2>
         <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="btn" type="button">Ок</button>
+        <button class="btn  btn--popup  btn--closed" type="button">Ок</button>
       </div>
-      <div class="popup popup-hidden">
+      <div class="popup  popup--rewiew  popup--hidden">
         <h2 class="popup__name">Ваш отзыв отправлен!</h2>
         <p class="popup__text">
           Спасибо за ваше участие, ваш отзыв уже поступил к нам.
           В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="btn" type="button">Закрыть окно</button>
+        <button class="btn  btn--popup  btn--closed" type="button" title="Закрыть">Закрыть окно</button>
       </div>
-      <script src="js/navmenu.js"></script>
     </div>
+    <script src="js/navmenu.js"></script>
+    <div class="overlay"></div>
   </body>
 </html>
