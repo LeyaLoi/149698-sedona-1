@@ -21,9 +21,13 @@
       color: #7aadcb;
       background-color: #5496bd;
     }
-    &:disabled {
-      background-color: #e5e5e5;
+    @media @tablet-widths {
+      padding: 16px 0;
     }
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
   }
 
   &--popup {

@@ -2,6 +2,29 @@
   width: 320px;
   height: 389px;
   background-color: #81b3d2;
+
+  @media @tablet-widths {
+    width: 768px;
+    height: 517px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+    height: 517px;
+  }
+
+}
+.main-slogan__picture--full img {
+  @media @tablet-widths {
+    width: 768px;
+    height: 292px;
+  }
+  @media @desktop-widths {
+    width: 1200px;
+    height: 300px;
+  }
+
+
 }
 .main-slogan__content {
   // .container-fluid();
@@ -18,8 +41,8 @@
     padding-bottom: 50px;
   }
   @media @desktop-widths {
-    padding-top: 40px;
-    padding-bottom: 55px;
+    padding-top: 45px;
+    padding-bottom: 50px;
   }
 
   &--photo {
@@ -39,7 +62,7 @@
       padding-bottom: 80px;
     }
     @media @desktop-widths {
-      padding: 100px 0 70px;
+      padding: 104px 0 54px;
     }
   }
 }
@@ -57,6 +80,7 @@
 
   &--font {
     @media @tablet-widths {
+      margin-bottom: 30px;
     font-size: 21px;
     }
   }

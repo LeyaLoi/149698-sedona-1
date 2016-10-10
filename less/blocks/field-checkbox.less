@@ -37,22 +37,35 @@ input[type="checkbox"] + label::after {
   left: 0;
   content: "";
   display: block;
-  // background-image: url("../img/icon-tick.svg");
-  // background-repeat: no-repeat;
+  border-radius: 5px;
+}
+input[type="checkbox"] + label::before {
   width: 55px;
   height: 55px;
   background-color: #f2f2f2;
-  border-radius: 5px;
 }
+
 input[type="checkbox"]:checked + label::after {
   width: 16px;
   height: 8px;
   top: 15px;
   left: 16px;
-  background-color: #f2f2f2;
+  background-color: transparent;
   border-radius: 0;
   border: 3px solid #000000;
   transform: rotate(-45deg);
   border-top-color: transparent;
   border-right-color: transparent;
+}
+input[type="checkbox"] + label:hover::before {
+  background-color: #e5e5e5;
+}
+input[type="checkbox"] + label:active::before {
+  background-color:  #d5d5d5;
+}
+input[type="checkbox"]:checked + label:active::after {
+  border-color: #a4a4a4;
+  border-top-color: transparent;
+  border-right-color: transparent;
+
 }

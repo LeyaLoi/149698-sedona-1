@@ -26,7 +26,7 @@
       </header>
       <main class="page-main  page-main--fluid">
         <section class="main-slogan">
-          <div class="main-slogan__picture">
+          <div class="main-slogan__picture  main-slogan__picture--full">
             <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
           </div>
           <div class="main-slogan__content  main-slogan__content--big">
@@ -41,7 +41,7 @@
         </section>
         <form class="form-review" action="https://echo.htmlacademy.ru" name="form-review" method="post">
           <fieldset class="form-review__fieldset">
-            <h2 class="form-review__name  form-review__name--center">Представьтесь<span class="">, пожалуйста</span>:</h2>
+            <h2 class="form-review__name  form-review__name--left">Представьтесь<span class="form-review__hidden">, пожалуйста</span>:</h2>
             <div class="form-review__item field-text">
               <label class="field-text__label" for="user-name">Имя:</label>
               <input class="field-text__input" type="text" id="user-name" name="user-name" placeholder="Петр" required>
@@ -90,7 +90,7 @@
             </div>
           </fieldset>
           <fieldset class="form-review__fieldset">
-            <h2 class="form-review__name  form-review__name--grad"><span class="form-review__fon">Посещенные достопримечательности:</span></h2>
+            <h2 class="form-review__name  form-review__name--grad"><span class="form-review__fon">Посещенные <br>достопримечательности:</span></h2>
             <div class="form-review__wrap">
               <div class="form-review__item field-checkbox">
                 <input class="field-checkbox__input" type="checkbox" id="name1" name="name1" checked>
@@ -111,9 +111,9 @@
             </div>
           </fieldset>
           <fieldset class="form-review__fieldset">
-            <h2 class="form-review__name  form-review__name--grad"><span class="form-review__fon">Опишите свои эмоции:</span></h2>
+            <h2 class="form-review__name form-review__name--padding form-review__name--grad"><span class="form-review__fon">Опишите свои эмоции:</span></h2>
             <div class="form-review__item field-textarea">
-              <textarea class="field-textarea__text" name="review" id="review" cols="1" rows="4">Опишите подробно все свои восторги
+              <textarea class="field-textarea__text" name="review" id="review" cols="1" rows="4" placeholder="Опишите подробно все свои восторги">
               </textarea>
             </div>
           </fieldset>

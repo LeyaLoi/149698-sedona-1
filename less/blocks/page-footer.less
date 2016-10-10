@@ -12,8 +12,17 @@
     padding-bottom: 35px;
   }
 
-  // @media @desktop-widths {
-  // }
+  @media @desktop-widths {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  &--small {
+    @media @tablet-widths {
+      padding-top: 34px;
+      padding-bottom: 38px;
+    }
+  }
 }
 .page-footer__contact {
   font-size: 21px;
@@ -47,7 +56,7 @@
   width: 110px;
   padding-right: 30px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   line-height: 26px;
 
   @media @tablet-widths {
@@ -56,6 +65,18 @@
     margin-bottom: 0px;
     padding-right: 40px;
     }
+
+    @media @desktop-widths {
+      margin-right: 45px;
+      box-sizing: border-box;
+    }
+
+    &--small {
+      @media @tablet-widths {
+        padding-bottom: 0px;
+      }
+    }
+
 }
 
 .page-footer__copyright-link {
