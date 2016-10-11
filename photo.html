@@ -26,8 +26,8 @@
       </header>
       <main class="page-main  page-main--full">
         <section class="main-slogan">
-          <div class="main-slogan__picture  main-slogan__picture--full">
-            <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
+          <div class="main-slogan__picture">
+            <!-- <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны"> -->
           </div>
           <div class="main-slogan__content main-slogan__content--photo">
             <h2 class="main-slogan__title">Фото и видео</h2>
@@ -39,7 +39,14 @@
         </section>
         <div class="gallery">
           <div class="gallery-wrap gallery-wrap--full">
-            <a class="foto" href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
+            <a class="foto  foto--big" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+              </picture>
+              <!-- <img src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg" width="320" height="389" alt="Каньон Седоны"> -->
+            </a>
             <div class="gallery__description">
               <div class="gallery__sign">
                 <p class="gallery__name">Неродные просторы</p>
@@ -50,7 +57,14 @@
             </div>
           </div>
           <div class="gallery-wrap">
-            <a class="foto" href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
+            <a class="foto" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+              </picture>
+              <!-- <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"> -->
+            </a>
             <div class="gallery__description">
               <div class="gallery__sign">
                 <p class="gallery__name">Местная растительность</p>
@@ -61,7 +75,14 @@
             </div>
           </div>
           <div class="gallery-wrap">
-            <a class="foto" href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
+            <a class="foto" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+              </picture>
+              <!-- <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"> -->
+            </a>
             <div class="gallery__description">
               <div class="gallery__sign">
                 <p class="gallery__name">Дорога на север</p>
@@ -72,7 +93,14 @@
             </div>
           </div>
           <div class="gallery-wrap">
-            <a class="foto" href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола"></a>
+            <a class="foto" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"  alt="Мост дьявола">
+              </picture>
+              <!-- <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола"> -->
+            </a>
             <div class="gallery__description">
               <div class="gallery__sign">
                 <p class="gallery__name">Мост дьявола</p>
@@ -91,7 +119,12 @@
             </p>
           </div>
           <div class="video-post__play">
-            <img src="img/video-mobile@1x.jpg" width="320" height="200" alt="видео">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"  alt="Неродные просторы">
+            </picture>
+            <!-- <img src="img/video-mobile@1x.jpg" width="320" height="200" alt="видео"> -->
             <div class="video-post__wrap">
               <div class="video-post__controls  video-post__controls--position">
                 <div class="video-post__scale">

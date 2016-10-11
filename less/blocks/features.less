@@ -196,9 +196,30 @@
     display: inline;
   }
 }
-.features__img {
+// .features__img {
+//   @media @tablet-widths {
+//     width: 67%;
+//   }
+// }
+.features__img  {
+  min-width: 320px;
+  width: 100%;
+  height: 260px;
+  background-color: #81b3d2;
+  background-image: url("../img/photo-city-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 768px auto;
+
   @media @tablet-widths {
-    width: 67%;
+    width: 512px;
+    height: 255px;
+    background-image: url("../img/photo-city-tablet@1x.jpg");
+    background-size: cover;
   }
 
+  @media @desktop-widths {
+    height: 300px;
+    background-image: url("../img/photo-city@1x.jpg");
+  }
 }

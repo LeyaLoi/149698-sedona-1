@@ -1,8 +1,10 @@
 .video-post {
-  // .container-fluid();
+  .container();
   border-top: 1px solid #e5e5e5;
 
   @media @tablet-widths {
+    width: 648px;
+    margin: 0 auto;
     border: none;
   }
   @media @desktop-widths {
@@ -48,7 +50,10 @@
   z-index: 0;
 }
 .video-post__play {
-  // .container();
+  @mobile-widths-only {
+  width: 320px;
+  margin: 0 auto;
+}
 }
 .video-post__wrap {
   padding: 0 20px;
