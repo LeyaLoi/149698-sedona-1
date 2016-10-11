@@ -12,6 +12,17 @@
     color: @white-color;
     background-color: #81b3d2;
   }
+
+  &--bgtriangle {
+    @media @mobile-widths-only {
+      // width: 100%;
+      // height: 37px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 37px;
+      background-position: top;
+    }
+  }
   &--bggray {
     align-items: center;
     padding: 0 20px;
@@ -49,11 +60,11 @@
 
   @media @tablet-widths {
     // float: left;
-    width: 180px;
+    width: 33%;
     padding: 44px 30px 30px;
   }
   @media @desktop-widths {
-      width: 300px;
+      width: 33%;
       padding: 50px 50px 48px;
     }
 
@@ -206,20 +217,62 @@
   width: 100%;
   height: 260px;
   background-color: #81b3d2;
-  background-image: url("../img/photo-city-mobile@1x.jpg");
+  background-image: url("../img/photo-city@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 768px auto;
+  background-size: 768px 260px;
 
   @media @tablet-widths {
-    width: 512px;
+    width: 67%;
     height: 255px;
     background-image: url("../img/photo-city-tablet@1x.jpg");
     background-size: cover;
   }
 
   @media @desktop-widths {
-    height: 300px;
+    height: 255px;
     background-image: url("../img/photo-city@1x.jpg");
+  }
+
+  &--fon {
+    background-image: url("../img/photo-bridge-mobile@1x.jpg");
+
+    @media @tablet-widths {
+      background-image: url("../img/photo-bridge-tablet@1x.jpg");
+    }
+
+    @media @desktop-widths {
+      background-image: url("../img/photo-bridge@1x.jpg");
+    }
+  }
+}
+@media (max-width: 767px) and (min-resolution: 144dpi),
+       (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .features__img  {
+    background-image: url("../img/photo-city-mobile@2x.jpg");
+    background-size: 767px auto;
+
+    &--fon {
+      background-image: url("../img/photo-bridge-mobile@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .features__img  {
+      background-image: url("../img/photo-city-tablet@2x.jpg");
+      background-size: 800px auto;
+
+      &--fon {
+        background-image: url("../img/photo-bridge-tablet@2x.jpg");
+      }
+    }
+}
+@media (min-width: 1280px) and (min-resolution: 144dpi),
+       (min-width: 1280px) and (min-resolution: 1.5dppx) {
+  .main-slogan__picture  {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: 1200px auto;
   }
 }

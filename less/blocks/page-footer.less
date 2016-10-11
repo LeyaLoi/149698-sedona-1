@@ -64,6 +64,7 @@
     text-align: right;
     margin-bottom: 0px;
     padding-right: 40px;
+    margin-top: 22px;
     }
 
     @media @desktop-widths {
@@ -73,6 +74,7 @@
 
     &--small {
       @media @tablet-widths {
+        margin-top: 0px;
         padding-bottom: 0px;
       }
     }
@@ -90,6 +92,13 @@
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-image: url("../img/logo-htmlacademy-hover.svg");
+  }
+  &:active {
+    background-image: url("../img/logo-htmlacademy-active.svg");
+  }
 
 }
 // @media @tablet-widths {
