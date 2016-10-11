@@ -1,0 +1,93 @@
+.field-tel {
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  @media @desktop-widths {
+    width: 50%;
+    align-items: center;
+    margin-top: 0px;
+  }
+  &--desktop {
+    @media @desktop-widths {
+      // width: 30%;
+      margin-right: 80px;
+    }
+  }
+}
+.field-tel__label {
+  padding-left: 20px;
+  margin-bottom: 10px;
+
+  @media @desktop-widths {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+}
+.field-tel__label span {
+  @media @desktop-widths {
+    display: none;
+  }
+}
+.field-tel__wrap {
+  display: flex;
+  position: relative;
+  flex: 1 100%;
+
+  @media @tablet-widths {
+    order: 2;
+  }
+  @media @desktop-widths {
+    flex: 1 auto;
+    width: 50%;
+    order: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email {
+    // width: 40%;
+    ::after {
+    background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+.field-tel__input {
+  flex: 1 100%;
+  padding: 16px;
+  padding-left: 20px;
+  padding-right: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  &::-webkit-input-placeholder {
+    color: #000000;
+  }
+}

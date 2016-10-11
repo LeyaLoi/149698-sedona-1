@@ -1,0 +1,48 @@
+.field-text {
+  display: flex;
+  justify-content: space-between;
+  // padding: 0 20px;
+  margin-bottom: 20px;
+
+  @media @tablet-widths {
+    padding: 0;
+  }
+}
+.field-text__input {
+  flex-grow: 1;
+  padding: 16px;
+  padding-right: 0;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  @media @tablet-widths {
+    flex: 1 auto;
+    width: 150px;
+    // margin: auto;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #000000;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    outline: none;
+  }
+
+
+}
+.field-text__label {
+  align-self: center;
+  padding-right: 20px;
+  line-height: 26px;
+}

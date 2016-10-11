@@ -1,6 +1,37 @@
+// .page-main {
+//   .container();
+// }
 .page-main {
-  .container();
-}
-.page-mainf {
-  .container-fluid();
+
+  &--fluid {
+    .container-fluid();
+    @media @tablet-widths {
+      width: 100%;
+      // max-width: 1200px;
+      margin: 0 auto;
+      }
+
+    @media @desktop-widths {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+  }
+
+  &--full {
+    .container-fluid();
+
+    @media @tablet-widths {
+      width: 100%;
+      // max-width: 1200px;
+      margin: 0 auto;
+      }
+
+
+    @media @desktop-widths {
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+    }
 }

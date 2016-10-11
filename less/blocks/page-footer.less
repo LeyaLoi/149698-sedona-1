@@ -2,40 +2,124 @@
   .container();
   .align();
   margin-top: 75px;
+
+  @media @tablet-widths {
+    display: flex;
+    align-items: center;
+    .clearfix();
+    .container-fluid();
+    padding-top: 95px;
+    padding-bottom: 35px;
+  }
+
+  @media @desktop-widths {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  &--small {
+    @media @tablet-widths {
+      padding-top: 34px;
+      padding-bottom: 38px;
+    }
+  }
 }
 .page-footer__contact {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   margin-bottom: 40px;
-}
-.page-footer__social {
-  margin-bottom: 40px;
-}
-@media @tablet-widths {
-  .page-footer {
-    .clearfix();
-  }
-  .page-footer__contact {
+
+  @media @tablet-widths {
     width: 33.3%;
-    float: left;
     text-align: left;
+    margin-bottom: 0px;
   }
-  .page-footer__social {
-    width: 33.3%;
-    float: left;
-  }
-  .page-footer__copyright {
-    width: 33.3%;
-    float: left;
-    text-align: right;
-  }
-}
-@media @desktop-widths {
-  .page-footer {
-    margin-top: 120px;
-  }
-  .page-footer__contact {
+
+  @media @desktop-widths {
     text-align: center;
   }
-  .page-footer__copyright {
-    float: right;
-  }
 }
+.page-footer__social {
+  .container();
+  margin-bottom: 40px;
+
+  @media @tablet-widths {
+      width: 33.3%;
+      margin-bottom: 0px;
+    }
+
+}
+.page-footer__copyright {
+  .align();
+  position: relative;
+  width: 110px;
+  padding-right: 30px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  line-height: 26px;
+
+  @media @tablet-widths {
+    width: 30%;
+    text-align: right;
+    margin-bottom: 0px;
+    padding-right: 40px;
+    }
+
+    @media @desktop-widths {
+      margin-right: 45px;
+      box-sizing: border-box;
+    }
+
+    &--small {
+      @media @tablet-widths {
+        padding-bottom: 0px;
+      }
+    }
+
+}
+
+.page-footer__copyright-link {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  display: block;
+  width: 27px;
+  height: 34px;
+  // padding-left: 14px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+// @media @tablet-widths {
+// //   // .page-footer {
+// //   //   .clearfix();
+// //   //   .container-fluid();
+// //   // }
+// //   .page-footer__contact {
+// //     width: 33.3%;
+// //     float: left;
+// //     text-align: left;
+// //   }
+//   // .page-footer__social {
+//   //   width: 33.3%;
+//   //   // float: left;
+//   // }
+//   // .page-footer__copyright {
+//   //   width: 33.3%;
+//   //   // float: left;
+//   //   text-align: right;
+//   // }
+// }
+// @media @desktop-widths {
+//   // .page-footer {
+//   //   margin-top: 120px;
+//   // }
+//   // .page-footer__contact {
+//   //   text-align: center;
+//   // }
+//   .page-footer__copyright {
+//     float: right;
+//   }
+// }
