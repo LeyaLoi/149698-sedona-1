@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+          </picture>
+          <!-- <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"> -->
+        </div>
+        <nav class="main-nav  main-nav--opened  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrap">
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фото и Видео</a></li>
+              <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section class="main-slogan">
+          <div class="main-slogan__picture  main-slogan__picture--full">
+          </div>
+          <div class="main-slogan__content">
+            <h2 class="main-slogan__title  main-slogan__title--font">
+              Седона &mdash; небольшой городок в Аризоне,
+              заслуживающий большего!
+            </h2>
+            <p class="main-slogan__text  main-slogan__text--font">
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+          </div>
+        </section>
+        <section class="features  features--bgblue features--bgtriangle">
+          <div class="features__content">
+            <h3 class="features__name">Настоящий<br> городок</h3>
+            <p class="features__number">&mdash; №1 &mdash;</p>
+            <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="features__img">
+            <!-- <img src="img/photo-city@1x.jpg" width="320" height="260" alt="Фото Седоны"> -->
+          </div>
+        </section>
+        <section class="features  features--bgwhite">
+          <div class="features__content  features__content--big">
+            <h3 class="features__name">Жилье</h3>
+            <p class="features__text features__text--align">Рекомедуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="features__content  features__content--big  features__content--icon">
+            <h3 class="features__name">Сувениры</h3>
+            <p class="features__text  features__text--align">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="features__content  features__content--big  features__content--icon1">
+            <h3 class="features__name">Еда</h3>
+            <p class="features__text features__text--align">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+        </section>
+        <section class="features  features--bgblue">
+          <div class="features__content  features__content--position">
+            <h3 class="features__name">Там есть<br> мост дьявола</h3>
+            <p class="features__number">&mdash; №2 &mdash;</p>
+            <p class="features__text">Да по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="features__img  features__img--fon">
+            <!-- <img src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Фото Мост Дьявола"> -->
+          </div>
+        </section>
+        <section class="features features--bggray">
+          <div class="features__content  features__content--small">
+            <h3 class="features__name">Небольшая<br> площадь</h3>
+            <p class="features__number">&mdash; №3 &mdash;</p>
+            <p class="features__text">Все достопримеча<span class="features__span">-<br></span>тельности находятся очень близко</p>
+          </div>
+          <div class="features__content  features__content--small">
+            <h3 class="features__name">Красивая <br>дорога</h3>
+            <p class="features__number">&mdash; №4 &mdash;</p>
+            <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="features__content  features__content--small">
+            <h3 class="features__name">Мало<br> туристов</h3>
+            <p class="features__number">&mdash; №5 &mdash;</p>
+            <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </section>
+        <div class="search-hotel">
+          <h2 class="search-hotel__title">Заинтересовались?</h2>
+          <p class="search-hotel__text">
+              Укажите предполагаемые даты поездки,<br>
+               и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="btn  btn--search" href="form-hotel.html">Найти гостиницу</a>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704343.7293175281!2d-111.92619618503794!3d34.90854978480757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462947079088"
+           height="350"  style="border:0" allowfullscreen></iframe>
+          <div class="map-marker"></div>
+        </div>
+      </main>
+      <footer class="page-footer  page-footer--small">
+        <div class="page-footer__contact"><span>#Visitsedona</span></div>
+        <div class="page-footer__social">
+          <div class="social">
+              <a class="social__link social__link--tw" href="#">Твиттер</a>
+              <a class="social__link social__link--fb" href="#">Фэйсбук</a>
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
+          </div>
+        </div>
+        <div class="page-footer__copyright  page-footer__copyright--small">
+          Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
+        </div>
+      </footer>
+      <script src="js/navmenu.js"></script>
+    </div>
+  </body>
+</html>
