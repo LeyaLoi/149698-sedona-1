@@ -10,7 +10,13 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="page-header__logo">
-          <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+          </picture>
+
+          <!-- <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a> -->
         </div>
         <nav class="main-nav  main-nav--opened  main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -26,8 +32,8 @@
       </header>
       <main class="page-main  page-main--fluid">
         <section class="main-slogan">
-          <div class="main-slogan__picture  main-slogan__picture--full">
-            <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны">
+          <div class="main-slogan__picture">
+            <!-- <img src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Каньон Седоны"> -->
           </div>
           <div class="main-slogan__content  main-slogan__content--big">
           <h2 class="main-slogan__title">
