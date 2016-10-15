@@ -17,7 +17,7 @@
 .page-header__logo {
   order: 1;
   align-self: center;
-  min-height: 56px;
+  max-height: 56px;
 
   @media @tablet-widths {
     // display: block;
@@ -28,6 +28,11 @@
     left: 50%;
     margin-left: -51px;
   }
+
+  @media @desktop-widths {
+    margin-left: -94px;
+  }
+
 }
 .page-header__logo img {
   @media @desktop-widths {

@@ -17,14 +17,9 @@ navToggle.addEventListener('click', function() {
 
 var submit = document.querySelector(".btn--submit");
 var popup = document.querySelector(".popup--rewiew");
-var error = document.querySelector(".popup--error");
-var close = popup.querySelector(".btn--closed");
-
-// submit.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   popup.classList.add("popup--opened");
-// });
-
+var error = document.querySelector(".popup__error");
+var closerewiew = popup--rewiew.querySelector(".btn--closed");
+var close = popup__error.querySelector(".btn--closed");
 
 
 var form = document.querySelector("form");
@@ -37,15 +32,20 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
     error.classList.add("popup--opened");
   } else {
-      event.preventDefault();
+    event.preventDefault();
     popup.classList.add("popup--opened");
   }
 });
 
-close.addEventListener("click", function(event) {
+closerewiew.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("popup--opened");
 });
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  error.classList.remove("popup--opened");
+});
+
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {

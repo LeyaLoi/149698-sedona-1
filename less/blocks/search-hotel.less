@@ -2,38 +2,46 @@
   .container-fluid();
   .align();
   margin: 0 20px;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 50px;
 
   @media @tablet-widths {
     width: 460px;
-    padding: 45px 0px 60px;
+    padding: 55px 0px 60px;
   }
+  
   @media @desktop-widths {
     width: 460px;
     padding: 55px 0px 68px;
   }
 }
 .search-hotel__title {
+  padding-bottom: 10px;
+
   @media @tablet-widths {
     font-size: 30px;
     line-height: 26px;
     font-weight: bold;
     margin-bottom: 30px;
+    padding-bottom: 0px;
   }
-
 }
+
 .search-hotel__text {
+  line-height: 24px;
+  padding-bottom: 21px;
+
   @media @tablet-widths {
     line-height: 24px;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
+    padding-bottom: 6px;
   }
 
-  // @media @desktop-widths {
-  //   padding-top: 15px;
-  // }
-
+  @media @desktop-widths {
+    padding-bottom: 11px;
+  }
 }
+
 .search-hotel__text br {
   display: none;
 

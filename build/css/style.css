@@ -15,7 +15,7 @@ body {
   min-width: 320px;
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
@@ -41,7 +41,7 @@ img {
 .page-header__logo {
   order: 1;
   align-self: center;
-  min-height: 56px;
+  max-height: 56px;
 }
 .main-nav {
   position: relative;
@@ -112,7 +112,7 @@ img {
 }
 .main-nav__item a {
   display: block;
-  padding: 8px 0px;
+  padding: 7px 0px;
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
@@ -131,35 +131,37 @@ img {
   box-shadow: inset 0px -2px 6px 0px rgba(0, 1, 1, 0.2);
 }
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 34px;
+  padding-bottom: 28px;
+}
+.page-footer--big {
+  padding-top: 75px;
+  padding-bottom: 28px;
 }
 .page-footer__contact {
+  text-align: center;
+  width: 100%;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 .page-footer__social {
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 .page-footer__copyright {
-  text-align: center;
   position: relative;
-  width: 110px;
-  padding-right: 30px;
+  padding-right: 40px;
   margin: 0 auto;
-  padding-bottom: 25px;
   line-height: 26px;
 }
 .page-footer__copyright-link {
   position: absolute;
   top: -4px;
-  right: 0;
+  right: 0px;
   display: block;
   width: 27px;
   height: 34px;
@@ -180,13 +182,13 @@ img {
   background-image: url("../img/text-sedona.svg"), url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: center, bottom, center;
   background-repeat: no-repeat;
-  background-size: 232px 40px, 100% 26px, 768px auto;
+  background-size: 232px 40px, 100% 26px, cover;
 }
 .main-slogan__picture--full {
   width: 100%;
   height: 389px;
   background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: 290px 217px, 100% 26px, 768px auto;
+  background-size: 290px 217px, 100% 26px, cover;
 }
 .main-slogan__content {
   text-align: center;
@@ -194,6 +196,15 @@ img {
   padding: 40px 30px;
   padding-bottom: 30px;
   line-height: 26px;
+  box-sizing: border-box;
+}
+.main-slogan__content--mobile {
+  padding-bottom: 5px;
+}
+.main-slogan__content--photo {
+  padding-top: 37px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .main-slogan__title {
   font-weight: bold;
@@ -201,9 +212,18 @@ img {
   color: #000000;
   margin-bottom: 35px;
 }
+.main-slogan__title--font {
+  margin-bottom: 28px;
+}
+.main-slogan__title--photo {
+  margin-bottom: 25px;
+}
 .main-slogan__text {
   padding: 0;
   margin: 0;
+}
+.main-slogan__text--photo {
+  line-height: 24px;
 }
 .features {
   display: flex;
@@ -216,20 +236,20 @@ img {
 .features--bggray {
   -ms-grid-row-align: center;
       align-items: center;
-  padding: 0 20px;
   background-color: #eeeeee;
 }
 .features--bgwhite {
   background-color: #ffffff;
   padding-top: 35px;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
 }
 .features__content {
+  flex: 1 100%;
   position: relative;
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  min-width: 33.3%;
+  width: 100%;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 55px;
@@ -241,7 +261,7 @@ img {
   padding: 0;
   padding-left: 70px;
   padding-right: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   text-align: left;
   box-sizing: border-box;
 }
@@ -249,7 +269,7 @@ img {
   position: absolute;
   content: "";
   top: -5px;
-  left: 15px;
+  left: 23px;
   background-image: url("../img/icon-house.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -267,12 +287,23 @@ img {
   width: 100%;
   margin: 0;
   flex: 1 100%;
-  padding: 30px 30px;
+  padding: 12px 35px;
+  padding-top: 26px;
+  padding-bottom: 12px;
   box-sizing: border-box;
   border-bottom: 1px solid #d6d6d6;
 }
 .features__content--small:last-child {
   border: none;
+}
+.features__content--position {
+  padding-top: 37px;
+  padding-bottom: 25px;
+}
+.features__content--mobile {
+  padding: 0 25px;
+  padding-top: 73px;
+  padding-bottom: 25px;
 }
 .features__name {
   margin: 0;
@@ -283,8 +314,11 @@ img {
 .features__name br {
   display: none;
 }
+.features__number--padding {
+  margin: 12px 0 12px;
+}
 .features__text--align {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .features__span {
   display: none;
@@ -292,22 +326,29 @@ img {
 .features__img {
   min-width: 320px;
   width: 100%;
-  height: 260px;
+  min-height: 260px;
   background-color: #81b3d2;
   background-image: url("../img/photo-city@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 768px 260px;
+  background-size: cover;
 }
 .features__img--fon {
-  background-image: url("../img/photo-bridge-mobile@1x.jpg");
+  background-image: url("../img/photo-bridge@1x.jpg");
 }
 .search-hotel {
   margin: auto;
   text-align: center;
   margin: 0 20px;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 50px;
+}
+.search-hotel__title {
+  padding-bottom: 10px;
+}
+.search-hotel__text {
+  line-height: 24px;
+  padding-bottom: 21px;
 }
 .search-hotel__text br {
   display: none;
@@ -315,7 +356,7 @@ img {
 .btn {
   display: block;
   padding: 20px 0;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -325,6 +366,9 @@ img {
   border: none;
   background-color: #81b3d2;
   cursor: pointer;
+}
+.btn--search {
+  padding: 16px 0;
 }
 .btn--search:hover {
   background-color: #669ec0;
@@ -345,7 +389,7 @@ img {
   width: 100%;
   height: 350px;
   position: relative;
-  background: #ffffff url("../img/bg-map-mobile@1x.jpg") no-repeat 50% 50%;
+  background: #cadfaa url("../img/bg-map-mobile@1x.jpg") no-repeat 50% 50%;
 }
 .map iframe {
   width: 100%;
@@ -362,8 +406,9 @@ img {
 .social {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  width: 160px;
+  justify-content: space-between;
+  width: 150px;
+  padding-right: 7px;
 }
 .social__link {
   font-size: 0;
@@ -451,17 +496,27 @@ img {
 }
 .field-text__input {
   flex-grow: 1;
+  width: 60px;
   padding: 16px;
   padding-right: 0;
   background-color: #f2f2f2;
   border: 2px solid transparent;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   box-sizing: border-box;
 }
 .field-text__input::-webkit-input-placeholder {
+  color: #000000;
+}
+.field-text__input::-moz-placeholder {
+  color: #000000;
+}
+.field-text__input:-ms-input-placeholder {
+  color: #000000;
+}
+.field-text__input::placeholder {
   color: #000000;
 }
 .field-text__input:hover {
@@ -517,7 +572,7 @@ img {
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "ptsans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -671,10 +726,6 @@ input[type="checkbox"]:checked + label:active::after {
 .field-textarea__text::placeholder {
   color: #000000;
 }
-.field-textarea__text::-webkit-input-placeholder {
-  color: #000000;
-  text-align: left;
-}
 .page-main--fluid {
   margin: auto;
 }
@@ -690,24 +741,32 @@ input[type="checkbox"]:checked + label:active::after {
   flex: 1 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 18px;
   margin: 0 auto;
   border-top: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+.gallery__sign {
+  line-height: 24px;
 }
 .gallery__name {
   font-weight: bold;
   color: #000000;
-  margin-bottom: 5px;
+  line-height: 24px;
+  margin-bottom: 3px;
 }
 .gallery__author {
-  margin: 5px 0;
+  margin: 0px 0 7px;
   text-transform: none;
+}
+.gallery__class {
+  line-height: 24px;
 }
 .gallery__icon-counter {
   position: relative;
   font-weight: bold;
   color: #000000;
-  padding-left: 40px;
+  padding-left: 37px;
 }
 .gallery__icon-counter::before {
   position: absolute;
@@ -726,6 +785,8 @@ input[type="checkbox"]:checked + label:active::after {
   text-decoration: none;
   width: 280px;
   height: 280px;
+  background-color: #81b3d2;
+  line-height: 0;
 }
 .video-post {
   width: 320px;
@@ -736,7 +797,7 @@ input[type="checkbox"]:checked + label:active::after {
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  padding: 40px 0;
+  padding: 30px 0 33px;
   position: relative;
 }
 .video-post__title {
@@ -747,11 +808,14 @@ input[type="checkbox"]:checked + label:active::after {
 }
 .video-post__text {
   line-height: 24px;
+  padding: 15px 23px 0px;
+  margin-bottom: 0px;
 }
 .video-post img {
   display: block;
   margin: 0 auto;
   z-index: 0;
+  background-color: blue;
 }
 .video-post__wrap {
   padding: 0 20px;
@@ -770,7 +834,7 @@ input[type="checkbox"]:checked + label:active::after {
   padding-top: 21px;
 }
 .video-post__controls--bg {
-  padding: 10px 20px;
+  padding: 10px 26px;
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
@@ -802,7 +866,7 @@ input[type="checkbox"]:checked + label:active::after {
   margin-left: auto;
 }
 .video-post__icon--full {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .video-post__icon-fill {
   fill: #5c6870;
@@ -917,42 +981,30 @@ input[type="checkbox"]:checked + label:active::after {
     color: #d6d0cc;
   }
   .page-footer{
-    width: 648px;
-  }
-  .page-footer{
-    display: flex;
+    width: 86%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-grid-row-align: center;
     align-items: center;
-    margin: auto;
-    padding-top: 95px;
-    padding-bottom: 35px;
-  }
-  .page-footer::after{
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .page-footer--small{
-    padding-top: 34px;
-    padding-bottom: 38px;
+    padding-bottom: 37px;
   }
   .page-footer__contact{
-    width: 33.3%;
-    text-align: left;
+    flex: 0 auto;
+    width: auto;
+    text-align: center;
     margin-bottom: 0px;
   }
   .page-footer__social{
-    width: 648px;
-  }
-  .page-footer__social{
-    width: 33.3%;
+    flex: 0 auto;
     margin-bottom: 0px;
   }
   .page-footer__copyright{
-    width: 30%;
+    flex: 0 auto;
+    margin: 0;
     text-align: right;
     margin-bottom: 0px;
     padding-right: 40px;
-    margin-top: 22px;
   }
   .page-footer__copyright--small{
     margin-top: 0px;
@@ -962,18 +1014,13 @@ input[type="checkbox"]:checked + label:active::after {
     width: 100%;
     height: 290px;
     background-image: url("../img/text-sedona.svg"), url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-size: 460px 78px, 100% 57px, 1280px auto;
+    background-size: 460px 78px, 100% 57px, cover;
     background-position: center, bottom, center;
   }
   .main-slogan__picture--full{
     height: 520px;
-    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-size: 470px 360px,  700px 57px, 1280px auto;
-  }
-  .main-slogan__picture--full{
-    height: 520px;
-    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-size: 470px 360px,  1200px 57px, 1280px auto;
+    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: 460px 350px,  100% 57px, cover;
   }
   .main-slogan__content{
     width: 490px;
@@ -981,9 +1028,12 @@ input[type="checkbox"]:checked + label:active::after {
     padding-top: 45px;
     padding-bottom: 50px;
   }
+  .main-slogan__content--mobile{
+    padding-bottom: 51px;
+  }
   .main-slogan__content--photo{
-    width: 450px;
-    padding: 70px 0;
+    width: 440px;
+    padding: 74px 0 70px;
   }
   .main-slogan__content--big{
     padding-top: 70px;
@@ -996,16 +1046,25 @@ input[type="checkbox"]:checked + label:active::after {
     margin-bottom: 30px;
     font-size: 21px;
   }
+  .main-slogan__title--photo{
+    margin-bottom: 30px;
+  }
   .features{
     flex-direction: row;
   }
+  .features::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
   .features--bgwhite{
-    padding: 60px 0px 50px;
+    padding: 60px 0px 47px;
   }
   .features__content{
     width: 648px;
   }
   .features__content{
+    flex: 1 auto;
     width: 33%;
     padding: 44px 30px 30px;
   }
@@ -1019,8 +1078,8 @@ input[type="checkbox"]:checked + label:active::after {
   .features__content--big{
     width: 176px;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 43px;
+    padding-right: 43px;
     padding-top: 100px;
     padding-bottom: 0;
   }
@@ -1031,13 +1090,17 @@ input[type="checkbox"]:checked + label:active::after {
     order: 1;
   }
   .features__content--small{
-    flex: 0 auto;
-    width: 176px;
-    padding: 45px 40px;
+    flex: 1 auto;
+    width: 33,3%;
+    padding: 45px 40px 31px;
     border: none;
   }
   .features__content--position{
     order: 1;
+  }
+  .features__content--mobile{
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .features__name{
     font-size: 21px;
@@ -1045,12 +1108,18 @@ input[type="checkbox"]:checked + label:active::after {
   .features__name br{
     display: inline;
   }
+  .features__number{
+    margin-bottom: 18px;
+  }
+  .features__text--align{
+    margin-top: 20px;
+  }
   .features__span{
     display: inline;
   }
   .features__img{
     width: 67%;
-    height: 255px;
+    min-height: 255px;
     background-image: url("../img/photo-city-tablet@1x.jpg");
     background-size: cover;
   }
@@ -1064,17 +1133,19 @@ input[type="checkbox"]:checked + label:active::after {
   }
   .search-hotel{
     width: 460px;
-    padding: 45px 0px 60px;
+    padding: 55px 0px 60px;
   }
   .search-hotel__title{
     font-size: 30px;
     line-height: 26px;
     font-weight: bold;
     margin-bottom: 30px;
+    padding-bottom: 0px;
   }
   .search-hotel__text{
     line-height: 24px;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
+    padding-bottom: 6px;
   }
   .search-hotel__text br{
     display: inline;
@@ -1087,7 +1158,7 @@ input[type="checkbox"]:checked + label:active::after {
     font-size: 21px;
   }
   .map{
-    background: #ffffff url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 50%;
+    background: #cadfaa url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 50%;
   }
   .form-review{
     width: 84%;
@@ -1252,11 +1323,8 @@ input[type="checkbox"]:checked + label:active::after {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 17px 20px 15px;
     padding-right: 30px;
-  }
-  .gallery__sign{
-    float: left;
   }
   .gallery__name{
     margin: 0;
@@ -1287,7 +1355,7 @@ input[type="checkbox"]:checked + label:active::after {
     width: 648px;
   }
   .video-post__header{
-    width: 430px;
+    width: 460px;
     padding: 65px 0px 75px;
   }
   .video-post__title{
@@ -1332,13 +1400,6 @@ input[type="checkbox"]:checked + label:active::after {
     padding: 0 20px;
   }
 }
-@media (min-width: 768px) and (min-width: 768px){
-  .page-footer{
-    width: 84%;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-}
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx){
   .main-slogan__picture{
     background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -1362,26 +1423,40 @@ input[type="checkbox"]:checked + label:active::after {
     width: 320px;
     margin: 0 auto;
   }
+  .page-header__logo{
+    margin-left: -94px;
+  }
   .page-header__logo img{
     width: 186px;
     height: 96px;
   }
   .page-footer{
-    width: 1200px;
-  }
-  .page-footer{
-    width: 100%;
+    width: 92%;
     max-width: 1200px;
+    padding-bottom: 37px;
+  }
+  .page-footer--big{
+    padding-top: 120px;
   }
   .page-footer__contact{
-    text-align: center;
+    display: flex;
+    width: 33.3%;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .page-footer__contact span{
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 85px;
   }
   .page-footer__social{
-    width: 1200px;
+    width: 33.3%;
   }
   .page-footer__copyright{
+    width: 33.3%;
     margin-right: 45px;
     box-sizing: border-box;
+    margin: 0;
   }
   .main-slogan__picture{
     width: 1200px;
@@ -1390,15 +1465,27 @@ input[type="checkbox"]:checked + label:active::after {
     background-size: 460px 78px, 1200px 57px, cover;
     background-position: center, bottom, center;
   }
+  .main-slogan__picture--full{
+    height: 520px;
+    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    background-size: 460px 350px,  1200px 57px, 1280px auto;
+  }
   .main-slogan__content{
     padding-top: 45px;
     padding-bottom: 50px;
   }
+  .main-slogan__content--mobile{
+    padding-bottom: 50px;
+  }
   .main-slogan__content--photo{
-    padding: 100px 0 70px;
+    width: 440px;
+    padding: 115px 0 70px;
   }
   .main-slogan__content--big{
     padding: 104px 0 54px;
+  }
+  .main-slogan__title--photo{
+    margin-bottom: 26px;
   }
   .features--bggray{
     padding: 0;
@@ -1430,10 +1517,16 @@ input[type="checkbox"]:checked + label:active::after {
   }
   .features__content--small{
     width: 270px;
-    padding: 45px 65px 55px;
+    padding: 45px 65px 51px;
+  }
+  .features__content--position{
+    padding: 50px 90px 46px;
+  }
+  .features__content--mobile{
+    padding: 50px 65px 46px;
   }
   .features__img{
-    height: 255px;
+    min-height: 255px;
     background-image: url("../img/photo-city@1x.jpg");
   }
   .features__img--fon{
@@ -1443,8 +1536,11 @@ input[type="checkbox"]:checked + label:active::after {
     width: 460px;
     padding: 55px 0px 68px;
   }
+  .search-hotel__text{
+    padding-bottom: 11px;
+  }
   .map{
-    background: #ffffff url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 50%;
+    background: #cadfaa url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 50%;
   }
   .form-review{
     margin: auto;
@@ -1524,8 +1620,12 @@ input[type="checkbox"]:checked + label:active::after {
   .gallery-wrap{
     flex: 1 33.3%;
   }
+  .gallery-wrap--full{
+    flex: 1 100%;
+  }
   .gallery__description{
-    margin-top: -83px;
+    margin-top: -85px;
+    padding: 22px 20px 14px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
   }
@@ -1603,7 +1703,7 @@ input[type="checkbox"]:checked + label:active::after {
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx){
   .main-slogan__picture{
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 767px auto;
+    background-size: 320px auto;
   }
   .features__img{
     background-image: url("../img/photo-city-mobile@2x.jpg");

@@ -34,7 +34,7 @@
                     url("../img/bg-back-mobile@1x.jpg");
   background-position: center, bottom, center;
   background-repeat: no-repeat;
-  background-size: 232px 40px, 100% 26px, 768px auto;
+  background-size: 232px 40px, 100% 26px, cover;
 
   @media @tablet-widths {
     width: 100%;
@@ -42,7 +42,7 @@
     background-image: url("../img/text-sedona.svg"),
                       url("../img/bg-intro-triangle-tablet.svg"),
                       url("../img/bg-back-tablet@1x.jpg");
-    background-size: 460px 78px, 100% 57px, 1280px auto;
+    background-size: 460px 78px, 100% 57px, cover;
     background-position: center, bottom, center;
   }
 
@@ -62,23 +62,23 @@
     background-image: url("../img/text-sedona-index.svg"),
                       url("../img/bg-intro-triangle-mobile.svg"),
                       url("../img/bg-back-mobile@1x.jpg");
-    background-size: 290px 217px, 100% 26px, 768px auto;
+    background-size: 290px 217px, 100% 26px, cover;
 
     @media @tablet-widths {
       height: 520px;
       background-image: url("../img/text-sedona-index.svg"),
                         url("../img/bg-intro-triangle-tablet.svg"),
-                        url("../img/bg-back-mobile@1x.jpg");
+                        url("../img/bg-back-tablet@1x.jpg");
 
-      background-size: 470px 360px,  700px 57px, 1280px auto;
+      background-size: 460px 350px,  100% 57px, cover;
     }
     @media @desktop-widths {
       height: 520px;
       background-image: url("../img/text-sedona-index.svg"),
                         url("../img/bg-intro-triangle-desktop.svg"),
-                        url("../img/bg-back-mobile@1x.jpg");
+                        url("../img/bg-back-desktop@1x.jpg");
 
-      background-size: 470px 360px,  1200px 57px, 1280px auto;
+      background-size: 460px 350px,  1200px 57px, 1280px auto;
     }
   }
 }
@@ -86,7 +86,7 @@
        (max-width: 767px) and (min-resolution: 1.5dppx) {
   .main-slogan__picture  {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 767px auto;
+    background-size: 320px auto;
   }
 }
 
@@ -97,6 +97,7 @@
     background-size: 1200px auto;
   }
 }
+
 @media (min-width: 1280px) and (min-resolution: 144dpi),
        (min-width: 1280px) and (min-resolution: 1.5dppx) {
   .main-slogan__picture  {
@@ -112,6 +113,7 @@
   padding: 40px 30px;
   padding-bottom: 30px;
   line-height: 26px;
+  box-sizing: border-box;
 
   @media @tablet-widths {
     width: 490px;
@@ -119,19 +121,36 @@
     padding-top: 45px;
     padding-bottom: 50px;
   }
+
   @media @desktop-widths {
     padding-top: 45px;
     padding-bottom: 50px;
   }
 
-  &--photo {
+  &--mobile {
+    padding-bottom: 5px;
+
     @media @tablet-widths {
-      width: 450px;
-      padding: 70px 0;
+      padding-bottom: 51px;
+    }
+    @media @desktop-widths {
+      padding-bottom: 50px;
+    }
+  }
+
+  &--photo {
+    padding-top: 37px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media @tablet-widths {
+      width: 440px;
+      padding: 74px 0 70px;
     }
 
     @media @desktop-widths {
-      padding: 100px 0 70px;
+      width: 440px;
+      padding: 115px 0 70px;
     }
   }
 
@@ -140,6 +159,7 @@
       padding-top: 70px;
       padding-bottom: 80px;
     }
+
     @media @desktop-widths {
       padding: 104px 0 54px;
     }
@@ -158,9 +178,24 @@
   }
 
   &--font {
+    margin-bottom: 28px;
+
     @media @tablet-widths {
       margin-bottom: 30px;
-    font-size: 21px;
+      font-size: 21px;
+    }
+  }
+
+  &--photo {
+    margin-bottom: 25px;
+
+    @media @tablet-widths {
+    margin-bottom: 30px;
+  }
+
+
+    @media @desktop-widths {
+      margin-bottom: 26px;
     }
   }
 }
@@ -175,11 +210,14 @@
   margin: 0;
   // line-height: 26px;
 
-  &--font {
-    // line-height: 26px;
+  &--photo {
+    line-height: 24px;
 
-    @media @tablet-widths {
+    @media @desktop-widths {
+      // line-height: 24px;
     }
-  }
 
+    // @media @tablet-widths {
+    // }
+  }
 }
